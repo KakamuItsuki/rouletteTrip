@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.app",
+  "appName": "rouletteTrip3",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

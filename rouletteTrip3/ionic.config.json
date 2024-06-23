@@ -1,0 +1,7 @@
+{
+  "name": "rouletteTrip3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
