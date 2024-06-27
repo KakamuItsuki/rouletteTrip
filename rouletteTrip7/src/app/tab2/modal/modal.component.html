@@ -1,3 +1,9 @@
-<p>
-  modal works!
-</p>
+<div id="modal-content-wrapper">
+  <section id="modal-body">
+      <p>カードを更新しますか？</p>
+  </section>
+  <footer id="modal-footer">
+      <button [mat-dialog-close]="OKOK">OK</button>
+      <button (click)="closeModal()">キャンセル</button>
+  </footer>
+</div>

@@ -35,3 +35,9 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+mat-dialog-container#modal-component {
+    //border: 3px solid #262626;
+    border-radius: 11px;
+    background-color: white;
+}
