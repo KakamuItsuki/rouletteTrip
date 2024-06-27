@@ -46,10 +46,14 @@ export class Tab2Page {
       console.log('close');
       if(response){
         console.log('OKボタン');
+        this.executeNewCard();
       }else{
         console.log('キャンセル');
       }
     });
+    
+  }
+  executeNewCard(){
     this.isShow=[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
     for (let i = this.missions.length - 1; i > 0; i--) {
       const r = Math.floor(Math.random() * (i + 1));

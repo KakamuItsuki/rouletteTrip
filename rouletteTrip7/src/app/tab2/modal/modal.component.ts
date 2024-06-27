@@ -11,12 +11,13 @@ export interface DialogData {
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent  implements OnInit {
+  OKOK = 'OKOK';
 
   constructor(
     public dialogRef: MatDialogRef<ModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
-
+  
   ngOnInit() {}
 
   // logoutボタンクリックイベントで呼び出される関数
