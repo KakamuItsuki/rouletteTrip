@@ -16,6 +16,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule,
     MatDialogModule,
+
   ],
   declarations: [
     Tab2Page, ModalComponent

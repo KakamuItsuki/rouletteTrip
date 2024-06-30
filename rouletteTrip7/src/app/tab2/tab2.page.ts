@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
 import { DialogData } from './modal/modal.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -9,6 +10,7 @@ import { DialogData } from './modal/modal.component';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  test = 0;
   dialogData: DialogData = {
     name: '',
     animal: ''
@@ -19,7 +21,10 @@ export class Tab2Page {
     'スクワット１０回する','論破する','自語りする','猫の写真を撮る','犬の写真を撮る','自販機でコーラを買う','ブランコに乗る','何か宣言する','坂道ダッシュする','他の人のミッションを見破る','mission12','mission13','mission14','mission15','mission16','mission17','mission18','mission19','mission20','mission21','mission22','mission23','mission24','mission25','mission26','mission27','mission28','mission29','mission30','mission31'
   ];
   missionsWithMember = ['とツーショットを撮る','をいつもと違う呼び方で３回以上呼ぶ','にジュースを奢ってあげる']
-  constructor(public matDialog: MatDialog) {}
+  constructor(
+    public matDialog: MatDialog,
+    private router: Router,
+  ) {}
 
   onclick(num: number){
     let input = num-1;
@@ -62,5 +67,7 @@ export class Tab2Page {
       this.missions[r] = tmp;
     }
   }
+
+
 
 }

@@ -1,20 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      BINGO旅
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-  <input type="button" value="New Card" class="new-card-button" (click)="onclickNewCard()"/>
+  <div class="bingo-header">
+    <input type="button" value="New Card" class="new-card-button" (click)="onclickNewCard()"/>
+  </div>
   <div class="bingo-card">
     <div class="bingo-image">
       

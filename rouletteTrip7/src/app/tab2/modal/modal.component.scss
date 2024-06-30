@@ -5,3 +5,16 @@
 #modal-content-wrapper{
     height: 120px;
 }
+
+#modal-footer{
+    width: 140px;
+    margin: auto;
+    margin-top: 25px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.select{
+    background-color: white;
+    font-size: 12px;
+}
