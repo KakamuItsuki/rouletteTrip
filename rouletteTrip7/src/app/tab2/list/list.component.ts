@@ -6,14 +6,19 @@ import { BingoService } from '../bingo.service';
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent  implements OnInit {
-
+  missions: string[] = [];
+  isShow: boolean[] = [];
   constructor(
     private bingoService: BingoService,
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.missions = this.bingoService.getMissions();
+  }
   
   onClickCard(){
     this.bingoService.changeToCard();
   }
+
+  
 }

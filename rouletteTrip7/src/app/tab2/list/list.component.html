@@ -1,3 +1,7 @@
 <div class="bingo-header">
   <input type="button" value="＜ card" class="new-card-button" (click)="onClickCard()"/>
 </div>
+
+<tr *ngFor="let mission of missions">
+  <td>{{mission}}</td>
+</tr>
