@@ -10,59 +10,6 @@
   <div class="bingo-header">
     <input type="button" value="New Card" class="new-card-button" (click)="onclickNewCard()"/>
   </div>
-  <div class="bingo-card">
-    <div class="bingo-image">
-      
-      <img src="assets/bingo/bingo_card_template.png" alt="">
-    </div>
-    <input type="button" value="1" class="bingo-no1 bingo-num" (click)="onclick(1)" (dblclick)="ondblclick(1)"/>
-    <input type="button" value="2" class="bingo-no2 bingo-num" (click)="onclick(2)" (dblclick)="ondblclick(2)"/>
-    <input type="button" value="3" class="bingo-no3 bingo-num" (click)="onclick(3)" (dblclick)="ondblclick(3)"/>
-    <input type="button" value="4" class="bingo-no4 bingo-num" (click)="onclick(4)" (dblclick)="ondblclick(4)"/>
-    <input type="button" value="5" class="bingo-no5 bingo-num" (click)="onclick(5)" (dblclick)="ondblclick(5)"/>
-    <input type="button" value="6" class="bingo-no6 bingo-num" (click)="onclick(6)" (dblclick)="ondblclick(6)"/>
-    <input type="button" value="7" class="bingo-no7 bingo-num" (click)="onclick(7)" (dblclick)="ondblclick(7)"/>
-    <input type="button" value="8" class="bingo-no8 bingo-num" (click)="onclick(8)" (dblclick)="ondblclick(8)"/>
-    <input type="button" value="9" class="bingo-no9 bingo-num" (click)="onclick(9)" (dblclick)="ondblclick(9)"/>
-    <input type="button" value="10" class="bingo-no10 bingo-num" (click)="onclick(10)" (dblclick)="ondblclick(10)"/>
-    <input type="button" value="11" class="bingo-no11 bingo-num" (click)="onclick(11)" (dblclick)="ondblclick(11)"/>
-    <input type="button" value="12" class="bingo-no12 bingo-num" (click)="onclick(12)" (dblclick)="ondblclick(12)"/>
-    <input type="button" value="13" class="bingo-no13 bingo-num" (click)="onclick(13)" (dblclick)="ondblclick(13)"/>
-    <input type="button" value="14" class="bingo-no14 bingo-num" (click)="onclick(14)" (dblclick)="ondblclick(14)"/>
-    <input type="button" value="15" class="bingo-no15 bingo-num" (click)="onclick(15)" (dblclick)="ondblclick(15)"/>
-    <input type="button" value="16" class="bingo-no16 bingo-num" (click)="onclick(16)" (dblclick)="ondblclick(16)"/>
-    <input type="button" value="17" class="bingo-no17 bingo-num" (click)="onclick(17)" (dblclick)="ondblclick(17)"/>
-    <input type="button" value="18" class="bingo-no18 bingo-num" (click)="onclick(18)" (dblclick)="ondblclick(18)"/>
-    <input type="button" value="19" class="bingo-no19 bingo-num" (click)="onclick(19)" (dblclick)="ondblclick(19)"/>
-    <input type="button" value="20" class="bingo-no20 bingo-num" (click)="onclick(20)" (dblclick)="ondblclick(20)"/>
-    <input type="button" value="21" class="bingo-no21 bingo-num" (click)="onclick(21)" (dblclick)="ondblclick(21)"/>
-    <input type="button" value="22" class="bingo-no22 bingo-num" (click)="onclick(22)" (dblclick)="ondblclick(22)"/>
-    <input type="button" value="23" class="bingo-no23 bingo-num" (click)="onclick(23)" (dblclick)="ondblclick(23)"/>
-    <input type="button" value="24" class="bingo-no24 bingo-num" (click)="onclick(24)" (dblclick)="ondblclick(24)"/>
-    <img src="assets/bingo/symbol087.png" class="bingo-no1 check" *ngIf="isShow[0]" alt="" (click)="onclick(1)" (dblclick)="ondblclick(1)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no2 check" *ngIf="isShow[1]" alt="" (click)="onclick(2)" (dblclick)="ondblclick(2)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no3 check" *ngIf="isShow[2]" alt="" (click)="onclick(3)" (dblclick)="ondblclick(3)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no4 check" *ngIf="isShow[3]" alt="" (click)="onclick(4)" (dblclick)="ondblclick(4)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no5 check" *ngIf="isShow[4]" alt="" (click)="onclick(5)" (dblclick)="ondblclick(5)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no6 check" *ngIf="isShow[5]" alt="" (click)="onclick(6)" (dblclick)="ondblclick(6)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no7 check" *ngIf="isShow[6]" alt="" (click)="onclick(7)" (dblclick)="ondblclick(7)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no8 check" *ngIf="isShow[7]" alt="" (click)="onclick(8)" (dblclick)="ondblclick(8)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no9 check" *ngIf="isShow[8]" alt="" (click)="onclick(9)" (dblclick)="ondblclick(9)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no10 check" *ngIf="isShow[9]" alt="" (click)="onclick(10)" (dblclick)="ondblclick(10)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no11 check" *ngIf="isShow[10]" alt="" (click)="onclick(11)" (dblclick)="ondblclick(11)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no12 check" *ngIf="isShow[11]" alt="" (click)="onclick(12)" (dblclick)="ondblclick(12)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no13 check" *ngIf="isShow[12]" alt="" (click)="onclick(13)" (dblclick)="ondblclick(13)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no14 check" *ngIf="isShow[13]" alt="" (click)="onclick(14)" (dblclick)="ondblclick(14)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no15 check" *ngIf="isShow[14]" alt="" (click)="onclick(15)" (dblclick)="ondblclick(15)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no16 check" *ngIf="isShow[15]" alt="" (click)="onclick(16)" (dblclick)="ondblclick(16)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no17 check" *ngIf="isShow[16]" alt="" (click)="onclick(17)" (dblclick)="ondblclick(17)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no18 check" *ngIf="isShow[17]" alt="" (click)="onclick(18)" (dblclick)="ondblclick(18)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no19 check" *ngIf="isShow[18]" alt="" (click)="onclick(19)" (dblclick)="ondblclick(19)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no20 check" *ngIf="isShow[19]" alt="" (click)="onclick(20)" (dblclick)="ondblclick(20)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no21 check" *ngIf="isShow[20]" alt="" (click)="onclick(21)" (dblclick)="ondblclick(21)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no22 check" *ngIf="isShow[21]" alt="" (click)="onclick(22)" (dblclick)="ondblclick(22)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no23 check" *ngIf="isShow[22]" alt="" (click)="onclick(23)" (dblclick)="ondblclick(23)">
-    <img src="assets/bingo/symbol087.png" class="bingo-no24 check" *ngIf="isShow[23]" alt="" (click)="onclick(24)" (dblclick)="ondblclick(24)">
-  </div>
-  <div>{{result}}</div>
+  <app-card></app-card>
+  
 </ion-content>
