@@ -23,7 +23,11 @@ export class Tab2Page implements OnInit{
         this.router.navigateByUrl('tabs/tab2/list');
       })
     );
-    
+    this.subscription.add(
+      this.bingoService.senseSelectCard().subscribe(()=>{
+        this.router.navigateByUrl('tabs/tab2/card');
+      })
+    );
   }
 
   

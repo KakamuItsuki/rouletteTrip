@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BingoService } from '../bingo.service';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent  implements OnInit {
 
-  constructor() { }
+  constructor(
+    private bingoService: BingoService,
+  ) { }
 
   ngOnInit() {}
-
+  
+  onClickCard(){
+    this.bingoService.changeToCard();
+  }
 }
