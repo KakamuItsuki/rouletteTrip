@@ -3,6 +3,7 @@ import { BingoService } from '../bingo.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -17,6 +18,7 @@ export class CardComponent  implements OnInit {
   constructor(
     private bingoService: BingoService,
     public matDialog: MatDialog,
+    private router: Router,
   ) { }
 
   ngOnInit(){
@@ -28,7 +30,6 @@ export class CardComponent  implements OnInit {
         this.isShow = this.bingoService.getIsShow();
       })
     );
-    
   }
 
   onclick(num: number){
@@ -60,6 +61,10 @@ export class CardComponent  implements OnInit {
 
   selectOK(){
     this.bingoService.executeNewCard();
+  }
+
+  onClickList(){
+    this.bingoService.changeToList();
   }
   
 

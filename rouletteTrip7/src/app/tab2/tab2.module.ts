@@ -9,6 +9,7 @@ import { ModalComponent } from './modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BingoService } from './bingo.service';
 import { CardComponent } from './card/card.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { CardComponent } from './card/card.component';
 
   ],
   declarations: [
-    Tab2Page, ModalComponent, CardComponent
+    Tab2Page, ModalComponent, CardComponent, ListComponent
   ],
   providers: [
     BingoService
