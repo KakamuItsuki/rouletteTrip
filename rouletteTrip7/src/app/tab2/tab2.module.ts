@@ -4,8 +4,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-import { ModalComponent } from './modal/modal.component';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { ModalComponent } from './modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   imports: [
@@ -13,8 +14,12 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    MatDialogModule,
+
   ],
-  declarations: [Tab2Page, ModalComponent]
+  declarations: [
+    Tab2Page, ModalComponent
+  ]
 })
 export class Tab2PageModule {}
