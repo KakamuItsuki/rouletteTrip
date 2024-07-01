@@ -14,6 +14,7 @@ export class ListComponent  implements OnInit {
 
   ngOnInit() {
     this.missions = this.bingoService.getMissions();
+    this.isShow = this.bingoService.getIsShow();
   }
   
   onClickCard(){
