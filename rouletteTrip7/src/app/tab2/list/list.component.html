@@ -1,3 +1,9 @@
-<p>
-  list works!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-</p>
+<div class="bingo-header">
+  <input type="button" value="＜ card" class="new-card-button" (click)="onClickCard()"/>
+</div>
+<div class="lists">
+<div *ngFor="let mission of missions; let i = index" class="list">
+    <input type="checkbox" [(ngModel)]="isShow[i]" class="checkbox">
+    <a class="mission">{{mission}}</a>
+</div>
+</div>

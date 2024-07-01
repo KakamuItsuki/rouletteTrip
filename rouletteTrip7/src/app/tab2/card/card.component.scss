@@ -1,0 +1,165 @@
+.bingo-image{
+    position: absolute;
+}
+
+.bingo-no1{
+    position: absolute;
+    top: 104px;
+    left: 29px;
+    
+}
+.bingo-no2{
+    position: absolute;
+    top: 157px;
+    left: 29px;
+}
+.bingo-no3{
+    position: absolute;
+    top: 211px;
+    left: 29px;
+}
+.bingo-no4{
+    position: absolute;
+    top: 265px;
+    left: 29px;
+}
+.bingo-no5{
+    position: absolute;
+    top: 319px;
+    left: 29px;
+}
+.bingo-no6{
+    position: absolute;
+    top: 104px;
+    left: 82px;
+}
+.bingo-no7{
+    position: absolute;
+    top: 157px;
+    left: 82px;
+}
+.bingo-no8{
+    position: absolute;
+    top: 211px;
+    left: 82px;
+}
+.bingo-no9{
+    position: absolute;
+    top: 265px;
+    left: 82px;
+}
+.bingo-no10{
+    position: absolute;
+    top: 319px;
+    left: 82px;
+}
+.bingo-no11{
+    position: absolute;
+    top: 104px;
+    left: 135px;
+}
+.bingo-no12{
+    position: absolute;
+    top: 157px;
+    left: 135px;
+}
+.bingo-no13{
+    position: absolute;
+    top: 265px;
+    left: 135px;
+}
+.bingo-no14{
+    position: absolute;
+    top: 319px;
+    left: 135px;
+}
+.bingo-no15{
+    position: absolute;
+    top: 104px;
+    left: 189px;
+}
+.bingo-no16{
+    position: absolute;
+    top: 157px;
+    left: 189px;
+}
+.bingo-no17{
+    position: absolute;
+    top: 211px;
+    left: 189px;
+}
+.bingo-no18{
+    position: absolute;
+    top: 265px;
+    left: 189px;
+}
+.bingo-no19{
+    position: absolute;
+    top: 319px;
+    left: 189px;
+}
+.bingo-no20{
+    position: absolute;
+    top: 104px;
+    left: 242px;
+}
+.bingo-no21{
+    position: absolute;
+    top: 157px;
+    left: 242px;
+}
+.bingo-no22{
+    position: absolute;
+    top: 211px;
+    left: 242px;
+}
+.bingo-no23{
+    position: absolute;
+    top: 265px;
+    left: 242px;
+}
+.bingo-no24{
+    position: absolute;
+    top: 319px;
+    left: 242px;
+}
+
+.bingo-num{
+    width: 48px;
+    height: 48px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: #addab7;
+}
+
+.bingo-card{
+    margin-top: 10px;
+    position: relative;
+    width: 320px;
+    height: 430px;
+}
+
+.check{
+    width: 50px;
+    height: 50px;
+}
+
+#modal-component {
+    border: 3px solid #262626;
+    border-radius: 1px;
+    background-color: #1a1a1a;
+}
+.new-card-button{
+    border-radius: 5px;
+    background-color: #76c1b0;
+    color: white;
+}
+.bingo-header{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

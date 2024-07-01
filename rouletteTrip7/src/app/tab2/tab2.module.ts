@@ -7,6 +7,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { ModalComponent } from './modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BingoService } from './bingo.service';
+import { CardComponent } from './card/card.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   imports: [
@@ -19,7 +22,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 
   ],
   declarations: [
-    Tab2Page, ModalComponent
+    Tab2Page, ModalComponent, CardComponent, ListComponent
+  ],
+  providers: [
+    BingoService
   ]
 })
 export class Tab2PageModule {}
