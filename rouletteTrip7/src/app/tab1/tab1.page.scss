@@ -6,3 +6,59 @@
     flex: 1 0 30%;
     margin: 16px 0;
 }
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   
+   .wheel {
+    width: 40px;
+    height: 120px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    overflow: hidden;
+   }
+   
+   .wheelPic {
+    //background-image: url("assets/bingo/bingo_card_template.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    //height: 400px;
+   }
+   
+   .btns {
+    display: flex;
+    margin-top: 50px;
+   }
+   
+   .btn {
+    background-color: #000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    span {
+     color: #fff;
+     font-weight: 700;
+    }
+   
+    &:nth-child(2) {
+     margin-left: 30px;
+    }
+   }
+
+   #js-slot_wheel_inner{
+    color: aqua;
+   }
