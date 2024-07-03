@@ -12,6 +12,21 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button>Default</ion-button>
+  <button (click)="changeColor()" >
+    {{ isBlue ? "赤くする" : "青くする" }}
+  </button>
+  <div class="box">
+    <div [@changeColor]="isBlue ? 'blue' : 'red'" class="container">
+      <div>aaa</div>
+      <div>bbb</div>
+      <div>ccc</div>
+      <div>ddd</div>
+      <div>eee</div>
+      <div>fff</div>
+      <div>aaa</div>
+      <div>bbb</div>
+      <div>ccc</div>
+    </div>
+  </div>
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
