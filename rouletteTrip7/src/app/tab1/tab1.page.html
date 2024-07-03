@@ -12,11 +12,19 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-  <button (click)="changeColor()" >
-    {{ isBlue ? "赤くする" : "青くする" }}
+  <button (click)="onClickStart()" >
+    スタート
+  </button>
+  <br>
+  <button (click)="onClickStop()" >
+    ストップ
+  </button>
+  <br>
+  <button (click)="onClickDefolte()" >
+    デフォルト
   </button>
   <div class="box">
-    <div [@changeColor]="isBlue ? 'blue' : 'red'" class="container">
+    <div [@changeColor]="slotState" class="container">
       <div>aaa</div>
       <div>bbb</div>
       <div>ccc</div>
