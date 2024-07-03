@@ -81,23 +81,25 @@ export class Tab1Page {
   }
 
   onClickStart(){
-    
+    //this.slotIndex++;
+    //this.slotState = this.genre[this.slotIndex];
     //console.log(this.slotState);
     const intervalId = setInterval(()=>{
       //console.log(this.slotState);
       this.slotIndex++;
-      console.log(this.slotIndex);
-      if(this.slotIndex === 7){
-        this.slotIndex = 0;
-        //clearInterval(intervalId);
-        //this.onClickStart();//
-      }
       
+      if(this.slotIndex === 7){
+        //this.slotState = this.genre[this.slotIndex];
+        this.slotIndex = 0;
+        this.slotState = this.genre[this.slotIndex];
+        setTimeout(()=>{this.slotIndex = 1;
+          this.slotState = this.genre[this.slotIndex];},10);
+        
+      }else{
+        //console.log(this.slotIndex);
+        this.slotState = this.genre[this.slotIndex];
+      }
     
-    // if(this.slotIndex === 7){
-    //   this.slotIndex = 0;
-    // }
-    this.slotState = this.genre[this.slotIndex];
     }, 1000);
     this.subscription.add(
       this.senseStop().subscribe(()=>{
