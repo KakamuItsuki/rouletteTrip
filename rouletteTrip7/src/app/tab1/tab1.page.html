@@ -12,6 +12,29 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button>Default</ion-button>
+  <button (click)="onClickStart()" >
+    スタート
+  </button>
+  <br>
+  <button (click)="onClickStop()" >
+    ストップ
+  </button>
+  <br>
+  <button (click)="onClickDefolte()" >
+    デフォルト
+  </button>
+  <div class="box">
+    <div [@changeColor]="slotState" class="container">
+      <div>aaa</div>
+      <div>bbb</div>
+      <div>ccc</div>
+      <div>ddd</div>
+      <div>eee</div>
+      <div>fff</div>
+      <div>aaa</div>
+      <div>bbb</div>
+      <div>ccc</div>
+    </div>
+  </div>
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
