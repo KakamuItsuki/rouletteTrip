@@ -53,12 +53,12 @@ import { Observable, Subject } from 'rxjs';
       top: '0px',
       })
     ),
-    transition('genre0 => genre1', [animate('1s')]),
-    transition('genre1 => genre2', [animate('1s')]),
-    transition('genre2 => genre3', [animate('1s')]),
-    transition('genre3 => genre4', [animate('1s')]),
-    transition('genre4 => genre5', [animate('1s')]),
-    transition('genre5 => genre6', [animate('1s')]),
+    transition('genre0 => genre1', [animate('0.1s')]),
+    transition('genre1 => genre2', [animate('0.1s')]),
+    transition('genre2 => genre3', [animate('0.1s')]),
+    transition('genre3 => genre4', [animate('0.1s')]),
+    transition('genre4 => genre5', [animate('0.1s')]),
+    transition('genre5 => genre6', [animate('0.1s')]),
     transition('genre6 => genre0', [animate('0s')]),
     transition('start => defolte', [animate('0s')]),
     ]),
@@ -81,26 +81,20 @@ export class Tab1Page {
   }
 
   onClickStart(){
-    //this.slotIndex++;
-    //this.slotState = this.genre[this.slotIndex];
-    //console.log(this.slotState);
     const intervalId = setInterval(()=>{
-      //console.log(this.slotState);
       this.slotIndex++;
       
       if(this.slotIndex === 7){
-        //this.slotState = this.genre[this.slotIndex];
         this.slotIndex = 0;
         this.slotState = this.genre[this.slotIndex];
+        // 10ms待たないとslotStateの切り替わりを検知してくれない？
         setTimeout(()=>{this.slotIndex = 1;
           this.slotState = this.genre[this.slotIndex];},10);
-        
       }else{
-        //console.log(this.slotIndex);
         this.slotState = this.genre[this.slotIndex];
       }
     
-    }, 1000);
+    }, 100);
     this.subscription.add(
       this.senseStop().subscribe(()=>{
         clearInterval(intervalId);
