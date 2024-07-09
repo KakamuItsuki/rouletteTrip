@@ -12,29 +12,37 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-  <button (click)="onClickStart()" >
-    スタート
-  </button>
-  <br>
-  <button (click)="onClickStop()" >
-    ストップ
-  </button>
-  <br>
-  <button (click)="onClickDefolte()" >
-    デフォルト
-  </button>
+
+
   <div class="box">
     <div [@changeColor]="slotState" class="container">
-      <div>aaa</div>
-      <div>bbb</div>
-      <div>ccc</div>
-      <div>ddd</div>
-      <div>eee</div>
-      <div>fff</div>
-      <div>aaa</div>
-      <div>bbb</div>
-      <div>ccc</div>
+      <div class="mission">大学</div>
+      <div class="mission">公園</div>
+      <div class="mission">コンビニ</div>
+      <div class="mission">スーパー</div>
+      <div class="mission">モール</div>
+      <div class="mission">商店街</div>
+      <div class="mission">〇〇専門店</div>
+      <div class="mission">水辺</div>
+      <div class="mission">観光地</div>
+      <div class="mission">動物</div>
+      <div class="mission">神社</div>
+      <div class="mission">カフェ</div>
+      <div class="mission">スイーツ</div>
+      <div class="mission">高いところ</div>
+      <div class="mission">暗いところ</div>
+      <div class="mission">ギャンブル</div>
+      <div class="mission">直売所</div>
+      <div class="mission">温泉</div>
+      <div class="mission">家具or家電屋</div>
+      <div class="mission">家具or家電屋</div>
+      <div class="mission">大学</div>
+      <div class="mission">公園</div>
+      <div class="mission">コンビニ</div>
     </div>
   </div>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="buttons">
+    <input type="button" (click)="onClickStart()" class="button" value="スタート"/>
+    <input type="button" (click)="onClickStop()" class="button" value="ストップ"/>
+  </div>
 </ion-content>

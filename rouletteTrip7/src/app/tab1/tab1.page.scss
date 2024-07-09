@@ -13,8 +13,35 @@
     overflow: hidden;
     background-color: bisque;
     position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container{
     position: absolute;
+    text-align: center;
+}
+.button{
+    border-radius: 5px;
+    background-color: #76c1b0;
+    color: white;
+}
+.buttons{
+    margin-top: 20px;
+    width: 200px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mission{
+    //margin-left: auto;
+    //margin-right: auto;
+    text-align: center;
+    width: 200px;
+}
+.mission-line{
+    text-align: center;
 }
 
