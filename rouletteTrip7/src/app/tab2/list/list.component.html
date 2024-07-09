@@ -4,6 +4,6 @@
 <div class="lists">
 <div *ngFor="let mission of missions; let i = index" class="list">
     <input type="checkbox" [(ngModel)]="isShow[i]" class="checkbox">
-    <a class="mission">{{mission}}</a>
+    <a class="mission">{{i+1}} {{mission}}</a>
 </div>
 </div>
