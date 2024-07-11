@@ -12,8 +12,15 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
-
+  <div class="pie-box">
+    <div [@rolateRoulette]="rouletteState">
+      <div class="pie"><p class="north">北</p><p class="east">東</p><p class="south">南</p><p class="west">西</p></div>
+    </div>
+  </div>
+  <div class="buttons">
+    <input type="button" (click)="onClickRouletteStart()" class="button" value="スタート"/>
+    <input type="button" (click)="onClickRouletteStop()" class="button" value="ストップ"/>
+  </div>
   <div class="box">
     <div [@changeColor]="slotState" class="container">
       <div class="mission">大学</div>

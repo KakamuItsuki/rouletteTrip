@@ -45,3 +45,41 @@
     text-align: center;
 }
 
+.pie {
+	position: relative;
+	
+	width: 150px;
+	height: 150px;
+	background-image: conic-gradient(#52abd5 0% 25%, #eae543 25% 50%, #82be7e 50% 75%, #f390dc 75% 100%);
+	border-radius: 50%;
+}
+
+.north{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.east{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+.south{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+.west{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+.pie-box{
+    margin-right: auto;
+	margin-left: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    color: rgb(12, 21, 30);
+}
